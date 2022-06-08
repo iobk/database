@@ -1,4 +1,4 @@
-module mysql0
+module mysql2
 
 go 1.18
 
