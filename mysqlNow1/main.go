@@ -15,7 +15,7 @@ func main() {
 		os.Exit(1)
 	}
 	defer conn.Close()
-	for i := 1; i < 10; i++ {
+	for i := 0; i < 10; i++ {
 		_, err := conn.Exec("INSERT INTO user1(userName,phoneNumber,workerName,dateTime) VALUE ('js kim',?,'david',now())", 100+i)
 		if err != nil {
 			fmt.Println(err)
